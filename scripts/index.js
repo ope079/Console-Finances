@@ -130,5 +130,5 @@ var greatestDecreaseValue = Math.min(...averageChangesProfitLoss)
 
 var greatestDecreaseMonth = finances[averageChangesProfitLoss.indexOf(greatestDecreaseValue) + 1][0]
 
-console.log("Greatest decrease in profits; " + greatestDecreaseMonth + " " + "(" + greatestDecreaseValue + ")")
+console.log("Greatest decrease in profits: " + greatestDecreaseMonth + " " + "(" + greatestDecreaseValue + ")")
 
