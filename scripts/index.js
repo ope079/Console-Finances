@@ -101,7 +101,7 @@ for(var i = 0; i < finances.length; i++){
     totalProfits += finances[i][1]
 }
 
-console.log("Total: " + totalProfits)
+console.log("Total: $" + totalProfits)
 
 averageChangesProfitLoss = []
 
@@ -117,18 +117,18 @@ averageChangesProfitLoss.forEach(element => {
 
 var average = sum/ averageChangesProfitLoss.length
 
-console.log("Average Change: " + parseFloat(average).toFixed(2))
+console.log("Average Change: $" + parseFloat(average).toFixed(2))
 
 var greatestIncreaseValue = Math.max(...averageChangesProfitLoss)
 
 
 var greatestIncreaseMonth = finances[averageChangesProfitLoss.indexOf(greatestIncreaseValue) + 1][0]
 
-console.log("Greatest increase in profits: " +  greatestIncreaseMonth + " " + "(" + greatestIncreaseValue  + ")")
+console.log("Greatest increase in profits: $" +  greatestIncreaseMonth + " " + "(" + "$" + greatestIncreaseValue  + ")")
 
 var greatestDecreaseValue = Math.min(...averageChangesProfitLoss)
 
 var greatestDecreaseMonth = finances[averageChangesProfitLoss.indexOf(greatestDecreaseValue) + 1][0]
 
-console.log("Greatest decrease in profits: " + greatestDecreaseMonth + " " + "(" + greatestDecreaseValue + ")")
+console.log("Greatest decrease in profits: " + greatestDecreaseMonth + " " + "(" + "$" + greatestDecreaseValue + ")")
 
